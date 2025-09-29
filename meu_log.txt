@@ -1,0 +1,5 @@
+2025-09-29 15:01:50 [INFO] Servidor iniciado na porta 749524384
+2025-09-29 15:01:50 [DEBUG] Carregando configuração...
+2025-09-29 15:01:50 [WARN] Uso de memória alto
+2025-09-29 15:01:50 [ERROR] Falha ao abrir arquivo 
+2025-09-29 15:01:50 [FATAL] Erro crítico: encerrando
