@@ -35,6 +35,8 @@ int start_server(int port) {
     int server_socket;
     struct sockaddr_in server_addr;
 
+    memset(&server_addr, 0, sizeof(server_addr));
+
     server_socket = socket(AF_INET, SOCK_STREAM, 0);
     if (server_socket == -1) {
         tslog_fatal("Nao foi possivel criar o socket");

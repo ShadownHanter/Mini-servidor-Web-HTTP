@@ -1,20 +1,41 @@
-2025-10-04 02:15:05 [INFO] Socket do servidor criado.
-2025-10-04 02:15:05 [INFO] Bind realizado na porta -1468814976
-2025-10-04 02:15:05 [INFO] Servidor escutando na porta -1468814976...
-2025-10-04 02:22:23 [INFO] Conexao aceita de :774909495
-2025-10-04 02:22:23 [INFO] Worker thread iniciada para o cliente 
-2025-10-04 02:27:51 [DEBUG] Recebido de : (null)
-2025-10-04 02:28:15 [DEBUG] Recebido de : (null)
-2025-10-04 02:37:49 [INFO] Socket do servidor criado.
-2025-10-04 02:37:49 [INFO] Bind realizado na porta 1168660704
-2025-10-04 02:37:49 [INFO] Servidor escutando na porta 1168660704...
-2025-10-04 02:38:07 [INFO] Conexao aceita de :774909495
-2025-10-04 02:38:07 [INFO] Worker thread iniciada para o cliente 
-2025-10-04 02:38:12 [DEBUG] Recebido de : (null)
-2025-10-04 02:44:02 [DEBUG] Recebido de : (null)
-2025-10-04 02:49:25 [INFO] Conexao aceita de :774909495
-2025-10-04 02:49:25 [INFO] Worker thread iniciada para o cliente 
-2025-10-04 02:50:09 [DEBUG] Recebido de : (null)
-2025-10-04 02:50:23 [DEBUG] Recebido de : (null)
-2025-10-04 02:54:46 [INFO] Cliente  desconectado.
-2025-10-04 02:54:49 [INFO] Cliente  desconectado.
+2025-10-06 12:40:47 [INFO] Socket do servidor criado.
+2025-10-06 12:40:47 [FATAL] Bind falhou na porta -807940576
+2025-10-06 12:46:43 [INFO] Socket do servidor criado.
+2025-10-06 12:46:43 [FATAL] Bind falhou na porta 472204496
+2025-10-06 12:50:39 [INFO] Socket do servidor criado.
+2025-10-06 12:50:39 [FATAL] Bind falhou na porta -1117494656
+2025-10-06 12:53:37 [INFO] Socket do servidor criado.
+2025-10-06 12:53:37 [FATAL] Bind falhou na porta -1828494448
+2025-10-06 13:03:42 [INFO] Socket do servidor criado.
+2025-10-06 13:03:42 [INFO] Bind realizado na porta -1701916352
+2025-10-06 13:03:42 [INFO] Servidor escutando na porta -1701916352...
+2025-10-06 13:03:50 [INFO] Conexao aceita de :774909495
+2025-10-06 13:08:25 [INFO] Iniciando servidor na porta 348082448...
+2025-10-06 13:08:25 [INFO] Socket do servidor criado.
+2025-10-06 13:08:25 [INFO] Bind realizado na porta 348082304
+2025-10-06 13:08:25 [INFO] Servidor escutando na porta 348082304...
+2025-10-06 13:09:36 [INFO] Conexao aceita de :774909495
+2025-10-06 13:12:07 [INFO] Iniciando servidor na porta -9856...
+2025-10-06 13:12:07 [INFO] Socket do servidor criado.
+2025-10-06 13:12:07 [INFO] Bind realizado na porta -10000
+2025-10-06 13:12:07 [INFO] Servidor escutando na porta -10000...
+2025-10-06 13:12:14 [INFO] Conexao aceita de :774909495
+2025-10-06 13:16:28 [INFO] Iniciando servidor na porta 920237152...
+2025-10-06 13:16:28 [INFO] Socket do servidor criado.
+2025-10-06 13:16:28 [FATAL] Bind falhou na porta 920237008
+2025-10-06 13:21:11 [INFO] Iniciando servidor na porta -9856...
+2025-10-06 13:25:21 [INFO] Iniciando servidor na porta 8080...
+2025-10-06 13:25:21 [INFO] Socket do servidor criado.
+2025-10-06 13:25:21 [INFO] Bind realizado na porta 1249456192
+2025-10-06 13:25:21 [INFO] Servidor escutando na porta 1249456192...
+2025-10-06 13:25:28 [INFO] Conexao aceita de :774909495
+2025-10-06 13:30:05 [INFO] Iniciando servidor na porta 8080...
+2025-10-06 13:30:05 [INFO] Socket do servidor criado.
+2025-10-06 13:30:05 [INFO] Bind realizado na porta 8080
+2025-10-06 13:30:05 [INFO] Servidor escutando na porta 8080...
+2025-10-06 13:30:10 [INFO] Conexao aceita de 127.0.0.1:34246
+2025-10-06 13:30:10 [INFO] Recebido de Wu: GET / HTTP/1.1
+2025-10-06 13:30:10 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 13:30:10 [INFO] Conexao aceita de 127.0.0.1:34256
+2025-10-06 13:30:10 [INFO] Recebido de : GET /favicon.ico HTTP/1.1
+2025-10-06 13:30:10 [WARN] Arquivo não encontrado: ./www/favicon.ico
