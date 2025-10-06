@@ -39,3 +39,246 @@
 2025-10-06 13:30:10 [INFO] Conexao aceita de 127.0.0.1:34256
 2025-10-06 13:30:10 [INFO] Recebido de : GET /favicon.ico HTTP/1.1
 2025-10-06 13:30:10 [WARN] Arquivo não encontrado: ./www/favicon.ico
+2025-10-06 14:05:48 [INFO] Iniciando servidor na porta 8080...
+2025-10-06 14:05:48 [INFO] Socket do servidor criado.
+2025-10-06 14:05:48 [INFO] Bind realizado na porta 8080
+2025-10-06 14:05:48 [INFO] Servidor escutando na porta 8080...
+2025-10-06 14:05:49 [INFO] Conexao aceita de 127.0.0.1:42992
+2025-10-06 14:05:49 [INFO] Recebido de : GET /index.html HTTP/1.1
+2025-10-06 14:05:49 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:05:49 [INFO] Conexao aceita de 127.0.0.1:43004
+2025-10-06 14:05:49 [INFO] Recebido de : GET / HTTP/1.1
+2025-10-06 14:05:49 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:05:49 [INFO] Conexao aceita de 127.0.0.1:43018
+2025-10-06 14:05:49 [INFO] Recebido de : GET /pagina_que_nao_existe.html HTTP/1.1
+2025-10-06 14:05:49 [WARN] Arquivo não encontrado: ./www/pagina_que_nao_existe.html
+2025-10-06 14:05:49 [INFO] Conexao aceita de 127.0.0.1:43022
+2025-10-06 14:05:49 [INFO] Recebido de : GET /etc/passwd HTTP/1.1
+2025-10-06 14:05:49 [WARN] Arquivo não encontrado: ./www/etc/passwd
+2025-10-06 14:09:07 [INFO] Iniciando servidor na porta 8080...
+2025-10-06 14:09:07 [INFO] Socket do servidor criado.
+2025-10-06 14:09:07 [INFO] Bind realizado na porta 8080
+2025-10-06 14:09:07 [INFO] Servidor escutando na porta 8080...
+2025-10-06 14:09:08 [INFO] Conexao aceita de 127.0.0.1:35722
+2025-10-06 14:09:08 [INFO] Recebido de ]{: GET /index.html HTTP/1.1
+2025-10-06 14:09:08 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:09:08 [INFO] Conexao aceita de 127.0.0.1:35728
+2025-10-06 14:09:08 [INFO] Recebido de : GET / HTTP/1.1
+2025-10-06 14:09:08 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:09:08 [INFO] Conexao aceita de 127.0.0.1:35734
+2025-10-06 14:09:08 [INFO] Recebido de : GET /pagina_que_nao_existe.html HTTP/1.1
+2025-10-06 14:09:08 [WARN] Arquivo não encontrado: ./www/pagina_que_nao_existe.html
+2025-10-06 14:09:08 [INFO] Conexao aceita de 127.0.0.1:35744
+2025-10-06 14:09:08 [INFO] Recebido de : GET /etc/passwd HTTP/1.1
+2025-10-06 14:09:08 [WARN] Arquivo não encontrado: ./www/etc/passwd
+2025-10-06 14:10:40 [INFO] Iniciando servidor na porta 8080...
+2025-10-06 14:10:40 [INFO] Socket do servidor criado.
+2025-10-06 14:10:40 [INFO] Bind realizado na porta 8080
+2025-10-06 14:10:40 [INFO] Servidor escutando na porta 8080...
+2025-10-06 14:10:45 [INFO] Conexao aceita de 127.0.0.1:53464
+2025-10-06 14:10:45 [INFO] Recebido de �x: GET / HTTP/1.1
+2025-10-06 14:10:45 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:10:47 [INFO] Conexao aceita de 127.0.0.1:53466
+2025-10-06 14:10:47 [INFO] Recebido de : GET / HTTP/1.1
+2025-10-06 14:10:47 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:11:09 [INFO] Conexao aceita de 127.0.0.1:47848
+2025-10-06 14:11:09 [INFO] Recebido de : GET / HTTP/1.1
+2025-10-06 14:11:09 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:12:38 [INFO] Iniciando servidor na porta 8080...
+2025-10-06 14:12:38 [INFO] Socket do servidor criado.
+2025-10-06 14:12:38 [INFO] Bind realizado na porta 8080
+2025-10-06 14:12:38 [INFO] Servidor escutando na porta 8080...
+2025-10-06 14:12:39 [INFO] Conexao aceita de 127.0.0.1:49470
+2025-10-06 14:12:39 [INFO] Recebido de �q: GET /index.html HTTP/1.1
+2025-10-06 14:12:39 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:12:39 [INFO] Conexao aceita de 127.0.0.1:49476
+2025-10-06 14:12:39 [INFO] Recebido de : GET / HTTP/1.1
+2025-10-06 14:12:39 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:12:39 [INFO] Conexao aceita de 127.0.0.1:49488
+2025-10-06 14:12:39 [INFO] Recebido de : GET /pagina_que_nao_existe.html HTTP/1.1
+2025-10-06 14:12:39 [WARN] Arquivo não encontrado: ./www/pagina_que_nao_existe.html
+2025-10-06 14:12:39 [INFO] Conexao aceita de 127.0.0.1:49504
+2025-10-06 14:12:39 [INFO] Recebido de : GET /etc/passwd HTTP/1.1
+2025-10-06 14:12:39 [WARN] Arquivo não encontrado: ./www/etc/passwd
+2025-10-06 14:14:00 [INFO] Iniciando servidor na porta 8080...
+2025-10-06 14:14:00 [INFO] Socket do servidor criado.
+2025-10-06 14:14:00 [INFO] Bind realizado na porta 8080
+2025-10-06 14:14:00 [INFO] Servidor escutando na porta 8080...
+2025-10-06 14:14:01 [INFO] Conexao aceita de 127.0.0.1:58870
+2025-10-06 14:14:01 [INFO] Recebido de �o: GET /index.html HTTP/1.1
+2025-10-06 14:14:01 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:14:01 [INFO] Conexao aceita de 127.0.0.1:58878
+2025-10-06 14:14:01 [INFO] Recebido de : GET / HTTP/1.1
+2025-10-06 14:14:01 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:14:01 [INFO] Conexao aceita de 127.0.0.1:58890
+2025-10-06 14:14:01 [INFO] Recebido de : GET /pagina_que_nao_existe.html HTTP/1.1
+2025-10-06 14:14:01 [WARN] Arquivo não encontrado: ./www/pagina_que_nao_existe.html
+2025-10-06 14:14:01 [INFO] Conexao aceita de 127.0.0.1:58906
+2025-10-06 14:14:01 [INFO] Recebido de : GET /etc/passwd HTTP/1.1
+2025-10-06 14:14:01 [WARN] Arquivo não encontrado: ./www/etc/passwd
+2025-10-06 14:14:11 [INFO] Iniciando servidor na porta 8080...
+2025-10-06 14:14:11 [INFO] Socket do servidor criado.
+2025-10-06 14:14:11 [INFO] Bind realizado na porta 8080
+2025-10-06 14:14:11 [INFO] Servidor escutando na porta 8080...
+2025-10-06 14:14:12 [INFO] Conexao aceita de 127.0.0.1:42942
+2025-10-06 14:14:12 [DEBUG] [DEBUG] Worker thread iniciada.
+2025-10-06 14:14:12 [INFO] Recebido de �y: GET /index.html HTTP/1.1
+2025-10-06 14:14:12 [DEBUG] [DEBUG] Caminho completo do arquivo montado: ./www/index.html
+2025-10-06 14:14:12 [DEBUG] [DEBUG] Verificação '..' passada. Tentando abrir o arquivo...
+2025-10-06 14:14:12 [DEBUG] [DEBUG] open() SUCESSO. Servindo o arquivo.
+2025-10-06 14:14:12 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:14:12 [DEBUG] [DEBUG] Thread encerrada.
+2025-10-06 14:14:12 [INFO] Conexao aceita de 127.0.0.1:42958
+2025-10-06 14:14:12 [DEBUG] [DEBUG] Worker thread iniciada.
+2025-10-06 14:14:12 [INFO] Recebido de : GET / HTTP/1.1
+2025-10-06 14:14:12 [DEBUG] [DEBUG] Caminho completo do arquivo montado: ./www/index.html
+2025-10-06 14:14:12 [DEBUG] [DEBUG] Verificação '..' passada. Tentando abrir o arquivo...
+2025-10-06 14:14:12 [DEBUG] [DEBUG] open() SUCESSO. Servindo o arquivo.
+2025-10-06 14:14:12 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:14:12 [DEBUG] [DEBUG] Thread encerrada.
+2025-10-06 14:14:13 [INFO] Conexao aceita de 127.0.0.1:42966
+2025-10-06 14:14:13 [DEBUG] [DEBUG] Worker thread iniciada.
+2025-10-06 14:14:13 [INFO] Recebido de : GET /pagina_que_nao_existe.html HTTP/1.1
+2025-10-06 14:14:13 [DEBUG] [DEBUG] Caminho completo do arquivo montado: ./www/pagina_que_nao_existe.html
+2025-10-06 14:14:13 [DEBUG] [DEBUG] Verificação '..' passada. Tentando abrir o arquivo...
+2025-10-06 14:14:13 [DEBUG] [DEBUG] open() FALHOU. Arquivo não encontrado.
+2025-10-06 14:14:13 [WARN] Arquivo não encontrado: ./www/pagina_que_nao_existe.html
+2025-10-06 14:14:13 [DEBUG] [DEBUG] Thread encerrada.
+2025-10-06 14:14:13 [INFO] Conexao aceita de 127.0.0.1:42974
+2025-10-06 14:14:13 [DEBUG] [DEBUG] Worker thread iniciada.
+2025-10-06 14:14:13 [INFO] Recebido de : GET /etc/passwd HTTP/1.1
+2025-10-06 14:14:13 [DEBUG] [DEBUG] Caminho completo do arquivo montado: ./www/etc/passwd
+2025-10-06 14:14:13 [DEBUG] [DEBUG] Verificação '..' passada. Tentando abrir o arquivo...
+2025-10-06 14:14:13 [DEBUG] [DEBUG] open() FALHOU. Arquivo não encontrado.
+2025-10-06 14:14:13 [WARN] Arquivo não encontrado: ./www/etc/passwd
+2025-10-06 14:14:13 [DEBUG] [DEBUG] Thread encerrada.
+2025-10-06 14:17:18 [INFO] Iniciando servidor na porta 8080...
+2025-10-06 14:17:18 [INFO] Socket do servidor criado.
+2025-10-06 14:17:18 [INFO] Bind realizado na porta 8080
+2025-10-06 14:17:18 [INFO] Servidor escutando na porta 8080...
+2025-10-06 14:17:19 [INFO] Conexao aceita de 127.0.0.1:47510
+2025-10-06 14:17:19 [INFO] Recebido de �q: GET /index.html HTTP/1.1
+2025-10-06 14:17:19 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:17:19 [INFO] Conexao aceita de 127.0.0.1:47526
+2025-10-06 14:17:19 [INFO] Recebido de : GET / HTTP/1.1
+2025-10-06 14:17:19 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:17:19 [INFO] Conexao aceita de 127.0.0.1:47536
+2025-10-06 14:17:19 [INFO] Recebido de : GET /pagina_que_nao_existe.html HTTP/1.1
+2025-10-06 14:17:19 [WARN] Arquivo não encontrado: ./www/pagina_que_nao_existe.html
+2025-10-06 14:17:19 [INFO] Conexao aceita de 127.0.0.1:47544
+2025-10-06 14:17:19 [INFO] Recebido de : GET /etc/passwd HTTP/1.1
+2025-10-06 14:17:19 [WARN] Arquivo não encontrado: ./www/etc/passwd
+2025-10-06 14:19:24 [INFO] Iniciando servidor na porta 8080...
+2025-10-06 14:19:24 [INFO] Socket do servidor criado.
+2025-10-06 14:19:24 [INFO] Bind realizado na porta 8080
+2025-10-06 14:19:24 [INFO] Servidor escutando na porta 8080...
+2025-10-06 14:19:25 [INFO] Conexao aceita de 127.0.0.1:39036
+2025-10-06 14:19:25 [INFO] Recebido de �s: GET /index.html HTTP/1.1
+2025-10-06 14:19:25 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:19:25 [INFO] Conexao aceita de 127.0.0.1:39040
+2025-10-06 14:19:25 [INFO] Recebido de : GET / HTTP/1.1
+2025-10-06 14:19:25 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:19:25 [INFO] Conexao aceita de 127.0.0.1:39046
+2025-10-06 14:19:25 [INFO] Recebido de : GET /pagina_que_nao_existe.html HTTP/1.1
+2025-10-06 14:19:25 [WARN] Arquivo não encontrado: ./www/pagina_que_nao_existe.html
+2025-10-06 14:19:25 [INFO] Conexao aceita de 127.0.0.1:39062
+2025-10-06 14:19:25 [INFO] Recebido de : GET /etc/passwd HTTP/1.1
+2025-10-06 14:19:25 [WARN] Arquivo não encontrado: ./www/etc/passwd
+2025-10-06 14:20:58 [INFO] Iniciando servidor na porta 8080...
+2025-10-06 14:20:58 [INFO] Socket do servidor criado.
+2025-10-06 14:20:58 [INFO] Bind realizado na porta 8080
+2025-10-06 14:20:58 [INFO] Servidor escutando na porta 8080...
+2025-10-06 14:20:59 [INFO] Conexao aceita de 127.0.0.1:45034
+2025-10-06 14:20:59 [INFO] Recebido de �{: GET /index.html HTTP/1.1
+2025-10-06 14:20:59 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:20:59 [INFO] Conexao aceita de 127.0.0.1:45044
+2025-10-06 14:20:59 [INFO] Recebido de : GET / HTTP/1.1
+2025-10-06 14:20:59 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:20:59 [INFO] Conexao aceita de 127.0.0.1:45056
+2025-10-06 14:20:59 [INFO] Recebido de : GET /pagina_que_nao_existe.html HTTP/1.1
+2025-10-06 14:20:59 [WARN] Arquivo não encontrado: ./www/pagina_que_nao_existe.html
+2025-10-06 14:20:59 [INFO] Conexao aceita de 127.0.0.1:45066
+2025-10-06 14:20:59 [INFO] Recebido de : GET /etc/passwd HTTP/1.1
+2025-10-06 14:20:59 [WARN] Arquivo não encontrado: ./www/etc/passwd
+2025-10-06 14:28:03 [INFO] Iniciando servidor na porta 8080...
+2025-10-06 14:28:03 [INFO] Socket do servidor criado.
+2025-10-06 14:28:03 [INFO] Bind realizado na porta 8080
+2025-10-06 14:28:03 [INFO] Servidor escutando na porta 8080...
+2025-10-06 14:28:04 [INFO] Conexao aceita de 127.0.0.1:51132
+2025-10-06 14:28:04 [INFO] Recebido de Js: GET /index.html HTTP/1.1
+2025-10-06 14:28:04 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:28:04 [INFO] Conexao aceita de 127.0.0.1:51134
+2025-10-06 14:28:04 [INFO] Recebido de : GET / HTTP/1.1
+2025-10-06 14:28:04 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:28:04 [INFO] Conexao aceita de 127.0.0.1:51148
+2025-10-06 14:28:04 [INFO] Recebido de : GET /pagina_que_nao_existe.html HTTP/1.1
+2025-10-06 14:28:04 [WARN] Arquivo não encontrado: ./www/pagina_que_nao_existe.html
+2025-10-06 14:28:04 [INFO] Conexao aceita de 127.0.0.1:51162
+2025-10-06 14:28:04 [INFO] Recebido de : GET /etc/passwd HTTP/1.1
+2025-10-06 14:28:04 [WARN] Arquivo não encontrado: ./www/etc/passwd
+2025-10-06 14:35:49 [INFO] Iniciando servidor na porta 8080 com limite de fila 10...
+2025-10-06 14:35:49 [INFO] Socket do servidor criado.
+2025-10-06 14:35:49 [INFO] Bind realizado na porta 8080
+2025-10-06 14:35:49 [INFO] Servidor escutando na porta 8080, fila de 10 conexões...
+2025-10-06 14:41:06 [INFO] Conexao aceita de 127.0.0.1
+2025-10-06 14:41:06 [INFO] Recebido de 127.0.0.1: GET / HTTP/1.1
+2025-10-06 14:41:06 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:42:19 [INFO] Iniciando servidor na porta 8080 com limite de fila 10...
+2025-10-06 14:42:19 [INFO] Socket do servidor criado.
+2025-10-06 14:42:19 [INFO] Bind realizado na porta 8080
+2025-10-06 14:42:19 [INFO] Servidor escutando na porta 8080, fila de 10 conexões...
+2025-10-06 14:42:20 [INFO] Conexao aceita de 127.0.0.1
+2025-10-06 14:42:20 [INFO] Recebido de 127.0.0.1: GET /index.html HTTP/1.1
+2025-10-06 14:42:20 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:42:20 [INFO] Conexao aceita de 127.0.0.1
+2025-10-06 14:42:20 [INFO] Recebido de 127.0.0.1: GET / HTTP/1.1
+2025-10-06 14:42:20 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:42:20 [INFO] Conexao aceita de 127.0.0.1
+2025-10-06 14:42:20 [INFO] Recebido de 127.0.0.1: GET /pagina_que_nao_existe.html HTTP/1.1
+2025-10-06 14:42:20 [WARN] Arquivo não encontrado: ./www/pagina_que_nao_existe.html
+2025-10-06 14:42:20 [INFO] Conexao aceita de 127.0.0.1
+2025-10-06 14:42:20 [INFO] Recebido de 127.0.0.1: GET /etc/passwd HTTP/1.1
+2025-10-06 14:42:20 [WARN] Arquivo não encontrado: ./www/etc/passwd
+2025-10-06 14:58:04 [INFO] Iniciando servidor na porta 8080 com limite de fila 10...
+2025-10-06 14:58:04 [INFO] Socket do servidor criado.
+2025-10-06 14:58:04 [INFO] Bind realizado na porta 8080
+2025-10-06 14:58:04 [INFO] Servidor escutando na porta 8080, fila de 10 conexões...
+2025-10-06 14:58:05 [INFO] Conexao aceita de 127.0.0.1
+2025-10-06 14:58:05 [INFO] Recebido de 127.0.0.1: GET /index.html HTTP/1.1
+2025-10-06 14:58:05 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:58:05 [INFO] Conexao aceita de 127.0.0.1
+2025-10-06 14:58:05 [INFO] Recebido de 127.0.0.1: GET / HTTP/1.1
+2025-10-06 14:58:05 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:58:05 [INFO] Conexao aceita de 127.0.0.1
+2025-10-06 14:58:05 [INFO] Recebido de 127.0.0.1: GET /pagina_que_nao_existe.html HTTP/1.1
+2025-10-06 14:58:05 [WARN] Arquivo não encontrado: ./www/pagina_que_nao_existe.html
+2025-10-06 14:58:05 [INFO] Conexao aceita de 127.0.0.1
+2025-10-06 14:58:05 [INFO] Recebido de 127.0.0.1: GET /etc/passwd HTTP/1.1
+2025-10-06 14:58:05 [WARN] Arquivo não encontrado: ./www/etc/passwd
+2025-10-06 14:59:02 [INFO] Iniciando servidor na porta 8080 com limite de fila 10...
+2025-10-06 14:59:02 [INFO] Socket do servidor criado.
+2025-10-06 14:59:02 [INFO] Bind realizado na porta 8080
+2025-10-06 14:59:02 [INFO] Servidor escutando na porta 8080, fila de 10 conexões...
+2025-10-06 14:59:07 [INFO] Conexao aceita de 127.0.0.1
+2025-10-06 14:59:07 [INFO] Recebido de 127.0.0.1: GET / HTTP/1.1
+2025-10-06 14:59:07 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 14:59:45 [INFO] Sinal 2 recebido, iniciando desligamento...
+2025-10-06 14:59:45 [INFO] Loop principal encerrado. Fechando socket do servidor.
+2025-10-06 14:59:45 [INFO] Servidor encerrado de forma limpa.
+2025-10-06 15:05:17 [INFO] Iniciando servidor na porta 8080 com limite de fila 10...
+2025-10-06 15:05:17 [INFO] Socket do servidor criado.
+2025-10-06 15:05:17 [INFO] Bind realizado na porta 8080
+2025-10-06 15:05:17 [INFO] Servidor escutando na porta 8080, fila de 10 conexões...
+2025-10-06 15:05:22 [INFO] Conexao aceita de 127.0.0.1
+2025-10-06 15:05:22 [INFO] Recebido de 127.0.0.1: GET / HTTP/1.1
+2025-10-06 15:05:22 [INFO] Arquivo enviado: ./www/index.html (270 bytes)
+2025-10-06 15:09:24 [INFO] 
+--- ESTATÍSTICAS DO SERVIDOR ---
+    Requisições Totais..: 1
+    Respostas 200 OK....: 1
+    Erros 404 Not Found.: 0
+    Erros 400 Bad Request: 0
+    ----------------------------------
+2025-10-06 15:10:47 [INFO] Sinal 2 (SIGINT) recebido, iniciando desligamento...
+2025-10-06 15:10:47 [INFO] Loop principal encerrado. Fechando socket do servidor.
+2025-10-06 15:10:47 [INFO] Servidor encerrado de forma limpa.

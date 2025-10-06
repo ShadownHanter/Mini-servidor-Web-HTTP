@@ -1,5 +1,3 @@
-// libtslog.c (VERSÃO CORRIGIDA E ROBUSTA)
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -37,10 +35,6 @@ void tslog_close(void) {
         logfile = NULL;
     }
 }
-
-// --- FUNÇÃO CENTRAL CORRIGIDA ---
-// Esta é a nova função "worker". Note que ela recebe 'va_list args'.
-// O "v" em vlog é uma convenção para "variadic list".
 void tslog_vlog(tslog_level_t level, const char *fmt, va_list args) {
     if (!logfile || level < current_level) return;
 
@@ -55,7 +49,6 @@ void tslog_vlog(tslog_level_t level, const char *fmt, va_list args) {
     // Imprime o cabeçalho do log
     fprintf(logfile, "%s [%s] ", time_buf, level_to_str(level));
 
-    // Usa vfprintf para imprimir a lista de argumentos formatada (a forma correta)
     vfprintf(logfile, fmt, args);
 
     fprintf(logfile, "\n");
@@ -64,10 +57,7 @@ void tslog_vlog(tslog_level_t level, const char *fmt, va_list args) {
     pthread_mutex_unlock(&lock);
 }
 
-// --- WRAPPERS (FUNÇÕES PÚBLICAS) CORRIGIDOS ---
-// Agora, TODAS as funções públicas chamam a 'tslog_vlog'.
 
-// A tslog_log original agora é apenas mais um wrapper.
 void tslog_log(tslog_level_t level, const char *fmt, ...) {
     va_list args;
     va_start(args, fmt);
