@@ -1,5 +1,3 @@
-// serve.c (VERSÃO FINAL COM ESTATÍSTICAS E GRACEFUL SHUTDOWN)
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -14,8 +12,6 @@
 #include "libtslog.h"
 #include "server.h"
 #include "worker.h"
-
-// --- Variáveis Globais ---
 
 // Para o controle do loop principal e desligamento
 volatile atomic_int keep_running = 1;
@@ -130,7 +126,6 @@ int start_server(int port, int backlog) {
         }
     }
 
-    // Código de limpeza executado após o loop ser interrompido
     tslog_info("Loop principal encerrado. Fechando socket do servidor.");
     close(g_server_socket);
     g_server_socket = -1;

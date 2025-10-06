@@ -1,5 +1,3 @@
-// server.h (VERSÃO FINAL COM ESTATÍSTICAS E GRACEFUL SHUTDOWN)
-
 #ifndef SERVER_H
 #define SERVER_H
 
@@ -22,8 +20,6 @@ typedef struct {
     atomic_uint bad_requests;
 } server_stats_t;
 
-
-// --- Protótipos de Funções e Variáveis Globais ---
 
 // Variável global para controlar o loop do servidor
 extern volatile atomic_int keep_running;

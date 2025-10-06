@@ -1,5 +1,3 @@
-# Makefile (VERSÃO FINAL E ROBUSTA)
-
 CC = gcc
 CFLAGS = -g -Wall -I. -pthread
 LDFLAGS = -pthread

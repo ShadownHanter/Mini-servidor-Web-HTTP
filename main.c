@@ -1,5 +1,3 @@
-// main.c (VERSÃO FINAL COM ESTATÍSTICAS E GRACEFUL SHUTDOWN)
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <signal.h> // Essencial para a função signal()
@@ -8,7 +6,6 @@
 
 int main(int argc, char *argv[]) {
     
-    // Registra os handlers para os sinais
     // Esta é a primeira coisa que fazemos para garantir que sejam capturados.
     signal(SIGINT, shutdown_handler);  // Para Ctrl+C
     signal(SIGUSR1, stats_handler); // Para pedir estatísticas
@@ -47,10 +44,8 @@ int main(int argc, char *argv[]) {
     snprintf(log_buffer, sizeof(log_buffer), "Iniciando servidor na porta %d com limite de fila %d...", port, backlog);
     tslog_info(log_buffer);
     
-    // Inicia o loop principal do servidor
     start_server(port, backlog);
 
-    // Este código agora será alcançado quando o servidor for encerrado com Ctrl+C
     tslog_info("Servidor encerrado de forma limpa.");
     tslog_close();
     

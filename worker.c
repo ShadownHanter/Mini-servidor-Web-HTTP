@@ -1,4 +1,3 @@
-// worker.c (VERSÃO FINAL COM CONTADORES DE ESTATÍSTICAS)
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,8 +16,6 @@
 // Declara que a variável 'stats' existe em outro arquivo (serve.c)
 extern server_stats_t stats;
 
-// --- Funções Auxiliares (get_mime_type, send_error_response) ---
-// (Estas funções continuam as mesmas)
 const char* get_mime_type(const char* path) {
     if (strstr(path, ".html")) return "text/html";
     if (strstr(path, ".css")) return "text/css";
