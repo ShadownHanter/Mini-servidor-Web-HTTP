@@ -1,0 +1,89 @@
+    Condições de Corrida (Race Conditions):
+
+        Quais dados são compartilhados entre múltiplas threads?
+
+        Esses dados são apenas lidos ou também são modificados?
+
+        Se são modificados, existe um mecanismo de "tranca" (mutex) ou uma operação atômica para proteger o acesso?
+
+    Deadlocks:
+
+        Usamos mais de um mutex no nosso programa?
+
+        Existe algum cenário onde uma Thread A, que já travou o Mutex 1, precisa esperar pelo Mutex 2, que por sua vez está travado pela Thread B que está esperando pelo Mutex 1? (A clássica espera circular).
+
+    Segurança de Threads (Thread Safety):
+
+        As funções de bibliotecas que chamamos de dentro das nossas threads são seguras para serem usadas em um ambiente concorrente?
+
+Análise Detalhada do Servidor
+
+1. Condições de Corrida (Race Conditions)
+
+Vamos analisar os dados compartilhados que identificamos no seu projeto:
+
+    O Arquivo de Log (libtslog.c)
+
+        Dado Compartilhado: O ponteiro do arquivo static FILE *logfile.
+
+        Acesso: Múltiplas threads (workers) chamam tslog_info, tslog_warn, etc., que por sua vez tentam escrever no mesmo arquivo (fprintf, fflush).
+
+        Proteção: SIM. Você implementou um pthread_mutex_t lock. Todas as operações de escrita no arquivo dentro de tslog_vlog são envolvidas por pthread_mutex_lock(&lock); e pthread_mutex_unlock(&lock);. Isso serializa o acesso ao arquivo, garantindo que as linhas de log de diferentes threads não se misturem ou corrompam o arquivo.
+
+        Veredito: SEGURO. Sua biblioteca de log é thread-safe por design.
+
+    A Estrutura de Estatísticas (serve.c e worker.c)
+
+        Dado Compartilhado: A variável global server_stats_t stats.
+
+        Acesso: Múltiplas threads (workers) incrementam os contadores (stats.total_requests, etc.). A thread principal (através do signal handler stats_handler) lê esses valores.
+
+        Proteção: SIM. Você usou atomic_uint de <stdatomic.h> e a função atomic_fetch_add(). Essas operações são "atômicas", o que significa que o hardware garante que a leitura-incremento-escrita do contador seja uma operação indivisível. Isso previne que duas threads tentem incrementar o mesmo contador ao mesmo tempo e percam uma das atualizações.
+
+        Veredito: SEGURO. O uso de operações atômicas é a maneira moderna e eficiente de proteger contadores simples.
+
+2. Deadlocks
+
+    Análise: Um deadlock acontece quando há uma espera circular por recursos travados. O cenário mais comum envolve duas ou mais threads e dois ou mais mutexes.
+
+        Thread A trava Mutex_1 e espera por Mutex_2.
+
+        Thread B trava Mutex_2 e espera por Mutex_1.
+
+    No seu projeto: Você tem apenas um mutex ativo e relevante, o lock dentro de libtslog.c. Uma thread pode ter que esperar por ele, mas a thread que o possui nunca esperará por outro recurso que a primeira thread tenha. Não há possibilidade de espera circular.
+
+    Veredito: IMPOSSÍVEL (na implementação atual). Seu design simples com um único ponto de sincronização para o log evita completamente a possibilidade de deadlocks.
+
+3. Outras Análises (Thread Safety e Vazamentos)
+
+    Funções de Biblioteca:
+
+        As funções usadas no worker.c (read, sscanf, snprintf, strcmp, strcpy, strstr, open, fstat, close) são todas consideradas thread-safe. Elas operam em seus próprios dados (passados como argumentos) e não modificam estados globais ocultos.
+
+        Ponto de Atenção: A função localtime(), usada em libtslog.c, não é thread-safe. Ela frequentemente usa um buffer estático interno. No entanto, sua chamada para localtime() está dentro do bloco protegido pelo mutex. Portanto, o seu uso específico dela é seguro, pois você garantiu que apenas uma thread pode chamá-la por vez.
+
+    Vazamento de Recursos:
+
+        Memória: O único malloc acontece em serve.c para o client_context_t. A primeira coisa que a thread handle_client_thread faz é copiar os dados e chamar free(context). Isso está correto e seguro.
+
+        File Descriptors: O client_socket é fechado no final de handle_client_thread em todos os caminhos de saída (return NULL). O file_fd para o arquivo sendo servido também é fechado (close(file_fd)). Isso está correto e seguro.
+
+Resumo e Sugestões
+
+Veredito Geral: Seu servidor tem um design de concorrência muito bom e seguro para os requisitos do projeto. Você usou as ferramentas certas (mutex para um recurso complexo como um arquivo, e atomics para contadores simples) nos lugares certos.
+
+Sugestões de Melhoria (para o futuro ou para refinar o código):
+
+    Refatoração do Código Morto: O serve.c provavelmente ainda tem resquícios do servidor de chat, como o array client_sockets e a função broadcast_message. Como o servidor HTTP não os utiliza, eles podem ser removidos para limpar o código.
+
+    Usar localtime_r em libtslog.c: Embora o seu uso de localtime seja seguro por causa do mutex, a função verdadeiramente thread-safe é a localtime_r (versão "reentrante"). Para projetos futuros, é uma boa prática usá-la. A mudança seria:
+    C
+
+// Em vez de:
+// struct tm *t = localtime(&now);
+
+// Usar:
+struct tm t_storage; // Variável local para a thread
+struct tm *t = localtime_r(&now, &t_storage);
+
+Gerenciamento de Threads no Shutdown: Atualmente, as threads são "destacadas" (pthread_detach). Isso significa que quando o servidor desliga, a thread principal não espera as threads worker terminarem. Para um servidor simples, isso é aceitável. Em um servidor de produção, você poderia implementar uma lógica para rastrear as threads ativas e esperar por elas (pthread_join) durante o processo de desligamento para garantir que nenhuma transação seja cortada no meio.
